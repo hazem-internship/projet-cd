@@ -9,4 +9,4 @@ RUN npm run build
 # stage 2 for prod 
 FROM nginx:alpine
 COPY --from=node /app/dist/my-app /usr/share/nginx/html
-
+EXPOSE 8080
